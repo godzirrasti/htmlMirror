@@ -2,4 +2,8 @@
 
 h1{
 	font-family: 'Orbitron';
+	color: grey;
+}
+body{
+	background: black;
 }
