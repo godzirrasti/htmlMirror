@@ -1,9 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Orbitron);
 
-/*h1{
+h1{
 	font-family: 'Orbitron';
-	color: grey;
-}*/
+	color: #17d4fe;
+}
 body{
 	background: black;
 }
