@@ -14,6 +14,8 @@
 				seconds = checkTime(seconds);
 				document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
 				var time = setTimeout(startTime, 500);
+				startDate();
+
 			}
 
 			//Add zero to single digits
@@ -23,9 +25,18 @@
 				}
 				return i;	
 			}
+
+			function startDate(){
+				var today = new Date();
+				var year = today.getFullYear();
+				var month = today.getMonth() + 1;
+				var day = today.getDate();
+				document.getElementById("date").innerHTML = month + "/" + day + "/" + year;
+			}
 		</script>
 	</head>
 	<body onload="startTime()">
 		<div id="clock"></div>
+		<div id="date"></div>
 	</body>
 </html>
