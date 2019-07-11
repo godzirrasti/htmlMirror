@@ -5,6 +5,7 @@
 		<link href="clock.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript">
 		
+			//Clock  function
 			function startTime(){
 				var today = new Date();
 				var hours = today.getHours();
@@ -26,6 +27,7 @@
 				return i;	
 			}
 
+			//Add the appropriate syntax to the day
 			function nth(d) {
  				if (d > 3 && d < 21) return 'th'; 
   				switch (d % 10) {
@@ -36,6 +38,7 @@
  				}
 			}
 
+			//Return the date formatted for the mirror
 			function startDate(){
 				var today = new Date();
 
