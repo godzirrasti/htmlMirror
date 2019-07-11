@@ -26,6 +26,16 @@
 				return i;	
 			}
 
+			function nth(d) {
+ 				if (d > 3 && d < 21) return 'th'; 
+  				switch (d % 10) {
+    				case 1:  return "st";
+    				case 2:  return "nd";
+    				case 3:  return "rd";
+    				default: return "th";
+ 				}
+			}
+
 			function startDate(){
 				var today = new Date();
 
@@ -59,7 +69,7 @@
 
 				var dayOfWeek = today.getDate(); //Used for second reference to day of the week
 
-				document.getElementById("date").innerHTML = day + ", " + m + " " + dayOfWeek + year;
+				document.getElementById("date").innerHTML = day + ", " + m + " " + dayOfWeek + nth(dayOfWeek) + " " + year;
 			}
 		</script>
 	</head>

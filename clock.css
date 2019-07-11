@@ -24,8 +24,8 @@ body{
 }
 #date{
 	position: fixed;
-	top: 10%;
-	left: 3%;
+	top: 11%;
+	left: 2.5%;
 	/*top: 50%; ****Used to center the clock****
 	left: 50%;  ****Used to center the clock****
 	transform: translate(-50%, -50%);  ****Used to center the clock****  */ 
@@ -33,6 +33,6 @@ body{
 	font-family: Orbitron;
 	letter-spacing: 7px;
 	font-weight: bold;
-	font-size: 2em;
+	font-size: 1em;
 	overflow: auto;
 }
