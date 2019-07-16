@@ -36,3 +36,25 @@ body{
 	font-size: 1em;
 	overflow: auto;
 }
+#temp{
+	position: fixed;
+	top: 20%;
+	left: 50%;
+	color:#17d4fe;
+	font-family: Orbitron;
+	letter-spacing: 7px;
+	font-weight: bold;
+	font-size: 1em;
+	overflow: auto;
+}
+#minutely{
+	position: fixed;
+	top: 130%;
+	left: 50%;
+	color:#17d4fe;
+	font-family: Orbitron;
+	letter-spacing: 7px;
+	font-weight: bold;
+	font-size: 1em;
+	overflow: auto;
+}

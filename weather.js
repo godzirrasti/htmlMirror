@@ -2,6 +2,7 @@ function weather() {
 	var location = document.getElementById("location");
   	var apiKey = config;
   	var url = "https://api.darksky.net/forecast/";
+  	var timezone = "America/New York";
 
   	navigator.geolocation.getCurrentPosition(success, error);
 
@@ -15,8 +16,8 @@ function weather() {
     $.getJSON(
       	url + apiKey + "/" + latitude + "," + longitude + "?callback=?",
       	function(data) {
-        	$("#temp").html(data.currently.temperature + "° F");
-       	 	$("#minutely").html(data.minutely.summary);
+        	$(".temp").html(data.currently.temperature + "° F");
+       	 	$(".minutely").html(data.minutely.summary);
       	}
     );
   	}
