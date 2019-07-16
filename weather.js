@@ -4,6 +4,7 @@ function weather(){
 	var apiKey = config;
 	var url = "https://api.darksky.net/forecast/";
 	var timezone = "America/New York";
+	//var urlRequest = url + apiKey + String(geoLat)
 }
 
 
