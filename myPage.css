@@ -25,3 +25,14 @@ body{
 	font-size: 1em;
 	overflow: auto;
 }
+#location{
+	position: fixed;
+	top: 15%;
+	left: 50%;
+	color:#17d4fe;
+	font-family: Orbitron;
+	letter-spacing: 7px;
+	font-weight: bold;
+	font-size: 1em;
+	overflow: auto;
+}
