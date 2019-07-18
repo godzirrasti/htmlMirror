@@ -4,7 +4,22 @@ function weather(){
 	var apiKey = config;
 	var url = "https://api.darksky.net/forecast/";
 	var timezone = "America/New York";
+	getWeather();
 }
+
+var getWeather = function() {
+    if(navigator.geolocation){
+      navigator.geolocation.getCurrentPosition(function(position){
+        var lat = position.coords.latitude;
+        var long = position.coords.longitude;
+        //showWeather(lat, long)
+        console.log(lat);
+        console.log(long);
+      })
+    } else {
+            window.alert("Current location could not be determined.");
+      }
+  }
 
 
 
