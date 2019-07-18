@@ -4,15 +4,6 @@ function weather(){
 	var apiKey = config;
 	var url = "https://api.darksky.net/forecast/";
 	var timezone = "America/New York";
-
-	//Check if the geolocation API exists
-	if (navigator.geolocation) {
-  		//true
- 		 location.innerHTML = "Location found!!!";
-	} else {
-  		//false
-  		location.innerHTML = "Geolocation not available";
-	}
 }
 
 

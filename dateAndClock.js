@@ -9,7 +9,6 @@ function startTime(){
 	document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
 	var time = setTimeout(startTime, 500);
 	startDate();
-
 }
 
 //Add zero to single digits
