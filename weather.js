@@ -15,6 +15,7 @@ var getWeather = function() {
         //showWeather(lat, long)
         console.log(lat);
         console.log(long);
+        
       })
     } else {
             window.alert("Current location could not be determined.");
