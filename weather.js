@@ -2,17 +2,20 @@ var lat;
 var long;
 var locale;
 var apiCall;
+var lati = 35.0870163;
+var longi = -80.6881609;
+var apiKey = config.MY_KEY;
 
 function weather(){
 	//Create variables
 	var location = document.getElementById("location");
-	var apiKey = config;
-	var url = "https://api.darksky.net/forecast/";
+    var url = "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/";
 	var timezone = "America/New York";
 	getWeather();
-    apiCall = url + apiKey + locale;
+    apiCall = url + apiKey + lati + "," + longi;
+    console.log(apiCall);
     $.getJSON(apiCall, function(forecast) {
-    console.log(forecast);
+    console.log(JSON.stringify(forecast));
 });
 
 }
@@ -25,7 +28,8 @@ function getWeather() {
         //showWeather(lat, long)
         console.log(lat);
         console.log(long);
-        locale = "[" + lat + "]" + "," + "[" + long + "]";
+        //locale = "[" + lat + "]" + "," + "[" + long + "]";
+        locale = lat + "," + long;
         console.log(locale);
         
       })
