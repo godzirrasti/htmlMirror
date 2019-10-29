@@ -23,14 +23,14 @@ function weather(){
 
 function getWeather(locale) {
     if(navigator.geolocation){
-      navigator.geolocation.getCurrentPosition(function(position){
-        lat = position.coords.latitude;
-        long = position.coords.longitude;
-        console.log(lat);
-        console.log(long);
-        locale = lat + "," + long;
-        console.log(locale);
-      })
+        navigator.geolocation.getCurrentPosition(function(position){
+            lat = position.coords.latitude;
+            long = position.coords.longitude;
+            console.log(lat);
+            console.log(long);
+            locale = lat + "," + long;
+            console.log(locale);
+        })
     } else {
             window.alert("Current location could not be determined.");
       }
