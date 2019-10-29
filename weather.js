@@ -18,8 +18,7 @@ function weather(){
     console.log(apiCall);
     $.getJSON(apiCall, function(forecast) {
     console.log(JSON.stringify(forecast));
-});
-
+    });
 }
 
 function getWeather(locale) {
