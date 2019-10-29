@@ -17,7 +17,7 @@ function weather(){
     //apiCall = url + apiKey + l;
     console.log(apiCall);
     $.getJSON(apiCall, function(forecast) {
-    console.log(JSON.stringify(forecast));
+        console.log(JSON.stringify(forecast));
     });
 }
 
