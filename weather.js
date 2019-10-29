@@ -33,7 +33,7 @@ function getWeather(locale) {
         })
     } else {
             window.alert("Current location could not be determined.");
-      }
-      return(locale);
-  };
+        }
+        return(locale);
+    };
 console.log(l);
