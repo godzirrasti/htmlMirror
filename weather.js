@@ -1,7 +1,7 @@
 var lat;
 var long;
 var locale;
-var l = getWeather(locale);
+var l; // = getWeather(locale);
 var apiCall;
 var lati = 35.0870163;
 var longi = -80.6881609;
@@ -9,7 +9,7 @@ var apiKey = config.MY_KEY;
 
 function weather(){
     //Create variables
-    getWeather();
+    l = getWeather();
     var location = document.getElementById("location");
     var url = "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/";
     var timezone = "America/New York";
@@ -17,7 +17,9 @@ function weather(){
     //apiCall = url + apiKey + l;
     console.log(apiCall);
     $.getJSON(apiCall, function(forecast) {
-        console.log(JSON.stringify(forecast));
+        console.log(forecast);
+
+        console.log( "Bogus --- " + forecast.timezone );
     });
 }
 
