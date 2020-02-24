@@ -5,7 +5,7 @@ var l; // = getWeather(locale);
 var apiCall;
 var lati = 35.0870163;
 var longi = -80.6881609;
-var apiKey = config.MY_KEY;
+var apiKey = config.apiKey;
 
 function weather(){
     //Create variables
@@ -16,6 +16,7 @@ function weather(){
     apiCall = url + apiKey + lati + "," + longi;
     //apiCall = url + apiKey + l;
     console.log(apiCall);
+    console.log(apiKey);
     $.getJSON(apiCall, function(forecast) {
         console.log(forecast);
 
