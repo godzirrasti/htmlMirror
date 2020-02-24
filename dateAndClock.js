@@ -8,7 +8,7 @@ function startTime(){
 	seconds = checkTime(seconds);
 	document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
 	var time = setTimeout(startTime, 500);
-	//startDate();
+	startDate();
 }
 
 //Add zero to single digits
