@@ -12,11 +12,11 @@ function weather(){
     l = getWeather();
     var location = document.getElementById("location");
     var url = "https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/";
-    var timezone = "America/New York";
+    var timezone = "America/Charlotte";
     apiCall = url + apiKey + lati + "," + longi;
     //apiCall = url + apiKey + l;
     console.log(apiCall);
-    console.log(apiKey);
+    console.log(locale);
     $.getJSON(apiCall, function(forecast) {
         console.log(forecast);
 
@@ -39,4 +39,3 @@ function getWeather(locale) {
         }
         return(locale);
     };
-console.log(l);
