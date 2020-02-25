@@ -19,7 +19,6 @@ function weather(){
     console.log(locale);
     $.getJSON(apiCall, function(forecast) {
         console.log(forecast);
-
         console.log( "Bogus --- " + forecast.timezone );
     });
 }
